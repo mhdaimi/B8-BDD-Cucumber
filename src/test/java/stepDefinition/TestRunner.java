@@ -9,8 +9,9 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "src/test/resources/features",
 		glue = "stepDefinition",
-		plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:target/cucumber-reports/report.html"},
-		monochrome = true
+		plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:target/report.html"},
+		monochrome = true,
+		tags = {"@datadriven"}
 		)
 
 

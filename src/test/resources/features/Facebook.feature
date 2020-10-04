@@ -25,7 +25,5 @@ Then Login is unsuccessful with text "<text>" displayed on page
 Examples:
 	| username | password | text |
 	| mhdaimi@gmx.com  | 12345678 | Log in to Facebook |
-	| batman@gmx.com   | 09876543 | Log in to Facebook |
-	| superman@gmx.com | asdf123  | Log in to Facebook |
 	
 

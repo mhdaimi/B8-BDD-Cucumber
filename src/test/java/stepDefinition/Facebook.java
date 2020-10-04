@@ -62,7 +62,7 @@ public class Facebook {
 	public void login_should_not_be_successful() {
 	    //Assert.assertEquals("Facebook – log in or sign up", browser.getTitle());
 		String pageText = browser.findElement(By.id("header_block")).getText();
-		Assert.assertEquals("Log in Facebook", pageText);
+		Assert.assertEquals("Log in to Facebook", pageText);
 	}
 
 }

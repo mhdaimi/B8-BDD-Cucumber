@@ -28,7 +28,7 @@ public class Facebook {
 
 	@When("User enters valid username")
 	public void user_enters_valid_username() {
-	    browser.findElement(By.id("email")).sendKeys("mhdaimi@gmx.com");
+	    browser.findElement(By.id("email")).sendKeys("mhdaimi123456789@gmx.com");
 	}
 
 	@When("User enters invalid password")

@@ -11,7 +11,7 @@ Then Login should not be successful
 
 @Smoke @Regression
 Scenario: Login with valid username; pass values from step
-When User enters valid username "mhdaimi@gmxx.com"
+When User enters valid username "daimi123@gmail.com"
 And User enters invalid password "123456789"
 And User clicks on signin button
 Then Login is unsuccessful with text "Log in to Facebook" displayed on page
@@ -24,6 +24,6 @@ And User clicks on signin button
 Then Login is unsuccessful with text "<text>" displayed on page
 Examples:
 	| username | password | text |
-	| mhdaimi@gmx.com  | 12345678 | Log in Facebook |
+	| mhdaimi123@hotmail.com  | 12345678 | Log in Facebook |
 	
 

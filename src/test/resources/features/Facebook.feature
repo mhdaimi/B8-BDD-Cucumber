@@ -24,6 +24,6 @@ And User clicks on signin button
 Then Login is unsuccessful with text "<text>" displayed on page
 Examples:
 	| username | password | text |
-	| mhdaimi123@hotmail.com  | 12345678 | Log in Facebook |
+	| mhdaimi123@hotmail.com  | 12345678 | Log in to Facebook |
 	
 

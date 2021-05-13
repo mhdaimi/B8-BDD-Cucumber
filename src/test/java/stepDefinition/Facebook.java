@@ -20,7 +20,7 @@ public class Facebook {
 	
 	@Given("User is at facebook login page")
 	public void user_is_at_facebook_login_page() {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\mhdai\\Downloads\\chromedriver_win32_85\\chromedriver.exe"); //
+		System.setProperty("webdriver.chrome.driver","src//test//resources//Drivers//chromedriver.exe"); //
 		browser = new ChromeDriver();
 		browser.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		browser.get("http://www.facebook.com/");	
@@ -60,7 +60,7 @@ public class Facebook {
 	
 	@Then("Login should not be successful")
 	public void login_should_not_be_successful() {
-	    //Assert.assertEquals("Facebook – log in or sign up", browser.getTitle());
+	    //Assert.assertEquals("Facebook ï¿½ log in or sign up", browser.getTitle());
 		String pageText = browser.findElement(By.id("header_block")).getText();
 		Assert.assertEquals("Log in to Facebook", pageText);
 	}

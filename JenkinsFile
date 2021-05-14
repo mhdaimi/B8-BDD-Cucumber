@@ -17,5 +17,11 @@ pipeline {
                 bat("mvn package")
             }
         }
+		
+		stage('Send Email'){
+			steps{
+				mail bcc: '', body: '${env.JOB_NAME} - ${env.BUILD_NUMBER} - ${currentBuild.currentResult}', cc: '', from: '', replyTo: '', subject: 'Team City Pipeline result', to: 'mhdaimi1@gmail.com'
+			}
+		}
     }
 }
